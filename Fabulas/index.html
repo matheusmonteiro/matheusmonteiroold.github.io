@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Editora Solstice</title>
+    <title>Fábulas de Montero Lobato - Editora Solstice</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Metatags -->
@@ -15,7 +15,7 @@
     <meta name="keywords" content="boilerplate, node, frontend, pug, stylus, webpack">
     <meta name="robots" content="index, follow"><!-- Facebook / Open Graph -->
     <meta property="fb:app_id" content="">
-    <meta property="og:title" content="Editora Solstice">
+    <meta property="og:title" content="Fábulas de Montero Lobato - Editora Solstice">
     <meta property="og:description" content="A simple frontend boilerplate to build professional web projects easily and quickly.">
     <meta property="og:site_name">
     <meta property="og:type" content="website">
@@ -23,7 +23,7 @@
     <meta property="og:image" content=""><!-- Twitter / Open Graph -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@project">
-    <meta name="twitter:title" content="Editora Solstice">
+    <meta name="twitter:title" content="Fábulas de Montero Lobato - Editora Solstice">
     <meta name="twitter:description" content="A simple frontend boilerplate to build professional web projects easily and quickly.">
     <meta name="twitter:image" content=""><!-- Google+ / Schema.org -->
     <meta itemprop="name" content="">
@@ -51,37 +51,31 @@
     <link rel="canonical" href="">
     <link rel="stylesheet" href="/assets/css/main.css">
   </head>
-  <body class="solstice">
-    <header class="header solstice">
+  <body class="home">
+    <header class="header">
       <ul class="menu">
-        <li class="logo"><a href="/solstice/"> 
+        <li class="logo"><a href="/"> 
             <image src="/assets/images/logo.svg"></image></a></li>
-        <li> <a href="#sobre">Sobre</a></li>
-        <li><a href="#book">Fábulas</a></li>
-        <li><a href="#paulista">Paulista</a></li>
+        <li> <a href="/">Compre o seu</a></li>
+        <li><a href="/SESC/">Quiz</a></li>
+        <li><a href="/FIESP/">Lojinha</a></li>
       </ul>
     </header>
     <main class="main">
-      <div class="container solstice">
-        <section class="content-section hero">
-          <h2>editora</h2>
-          <h1>SOLSTICE</h1>
-          <block class="heroImage">
-            <image src="/assets/images/herosostice.png"></image>
+      <div class="container home">
+        <section class="content-section home">
+          <block class="titleImage">
+            <image src="/assets/images/title.svg"></image>
           </block>
-        </section>
-        <section class="about" id="sobre">
-          <h3>SOBRE</h3>
-          <p>Poster can be one of the effective marketing and advertising materials. It is also a great tool to use when you want to present your services to a new league or as a point of sale display on picture day. The poster must show your products that are available, </p>
         </section>
       </div>
     </main>
-    <main class="buy" id="book">
+    <main class="buy">
       <div class="container">
         <section class="textSection">
-          <h2>Fábulas, de Monteiro Lobato</h2>
-          <p class="buyText">Dona Benta, reúne os netos e se prepara para mais uma tarde de aventuras. Desta vez, no mundos onde raposas, carneiros, rãs e formigas falam e transmitem aos homens os mais variados ensinamentos.</p><a href="/fabulas/">
-            <button class="squareBtn">Acessar</button></a>
+          <h2>Ainda não tem?</h2>
+          <p class="buyText">Dona Benta, reúne os netos e se prepara para mais uma tarde de aventuras. Desta vez, no mundos onde raposas, carneiros, rãs e formigas falam e transmitem aos homens os mais variados ensinamentos.</p>
+          <button class="ctaBtn">Versão digital</button>
         </section>
         <section class="mockSection">
           <block class="buyImage">
@@ -90,21 +84,26 @@
         </section>
       </div>
     </main>
-    <main class="buy magazine">
+    <section class="quiz">
       <div class="container">
-        <section class="textSection" id="paulista">
-          <h2>Prédios da Avenida Paulista</h2>
-          <p class="buyText">Dona Benta, reúne os netos e se prepara para mais uma tarde de aventuras. Desta vez, no mundos onde raposas, carneiros, rãs e formigas falam e transmitem aos homens os mais variados ensinamentos.</p><a href="/indice/">
-            <button class="squareBtn">Acessar</button></a>
-        </section>
-        <section class="mockSection">
-          <block class="buyImage">
-            <image src="/assets/images/magazinemobile.jpg"></image>
-          </block>
-        </section>
+        <div class="quiz">
+          <h3>faça nosso quiz</h3>
+          <h2 class="green">Quem é você no mundo <br> das fábulas? </h2>
+        </div><a href="https://www.buzzfeed.com/editorasolstice/descubra-quem-voca-a-de-fabulas-de-monteiro-lo-3otq4" target="blank">
+          <button class="ctaBtn">Quero o meu	</button></a>
       </div>
-    </main>
-    <main class="team">
+    </section>
+    <script src="/assets/js/bundle.vendor.js" async="true"></script>
+    <script src="/assets/js/bundle.main.js" async="true"></script>
+    <script>
+      !function(s,i,m,p,l,e){s.GoogleAnalyticsObject=m;s[m]||(s[m]=function(){
+      (s[m].q=s[m].q||[]).push(arguments)});s[m].l=+new Date;l=i.createElement(p);
+      e=i.getElementsByTagName(p)[0];l.src='//www.google-analytics.com/analytics.js';
+      e.parentNode.insertBefore(l,e)}(window,document,'ga','script');
+      ga('create', 'UA-XXXXX-X', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <main class="team team-fabulas">
       <div class="container">
         <h3>EQUIPE</h3>
         <ul>
@@ -123,15 +122,5 @@
         </ul>
       </div>
     </main>
-    <script src="/assets/js/bundle.vendor.js" async="true"></script>
-    <script src="/assets/js/bundle.main.js" async="true"></script>
-    <script>
-      !function(s,i,m,p,l,e){s.GoogleAnalyticsObject=m;s[m]||(s[m]=function(){
-      (s[m].q=s[m].q||[]).push(arguments)});s[m].l=+new Date;l=i.createElement(p);
-      e=i.getElementsByTagName(p)[0];l.src='//www.google-analytics.com/analytics.js';
-      e.parentNode.insertBefore(l,e)}(window,document,'ga','script');
-      ga('create', 'UA-XXXXX-X', 'auto');
-      ga('send', 'pageview');
-    </script>
   </body>
 </html>
